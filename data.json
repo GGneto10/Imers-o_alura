@@ -33,5 +33,26 @@
     "anoCriacao": 1995,
     "criador": "Yukihiro Matsumoto",
     "link": "https://www.ruby-lang.org/pt/"
+},
+{
+    "nome": "C++",
+    "descricao": "C++ é uma linguagem de programação de propósito geral, compilada e multiparadigma. É uma extensão da linguagem C, amplamente utilizada em software de sistema, jogos, drivers e aplicações de alto desempenho.",
+    "anoCriacao": 1985,
+    "criador": "Bjarne Stroustrup",
+    "link": "https://isocpp.org/"
+},
+{
+    "nome": "PHP",
+    "descricao": "PHP é uma linguagem de script de código aberto, especialmente adequada para o desenvolvimento web. É frequentemente usada para criar páginas dinâmicas e interagir com bancos de dados, sendo a base de sistemas como o WordPress.",
+    "anoCriacao": 1995,
+    "criador": "Rasmus Lerdorf",
+    "link": "https://www.php.net/"
+},
+{
+    "nome": "TypeScript",
+    "descricao": "TypeScript é um superconjunto de JavaScript desenvolvido pela Microsoft que adiciona tipagem estática opcional à linguagem. Ajuda a construir aplicações JavaScript em larga escala de forma mais segura e robusta.",
+    "anoCriacao": 2012,
+    "criador": "Microsoft",
+    "link": "https://www.typescriptlang.org/"
 }
 ]

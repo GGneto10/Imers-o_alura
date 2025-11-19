@@ -215,7 +215,7 @@ article a:hover {
 
     div input, /* Estilos para o input e seu placeholder em telas muito pequenas */
     div input::placeholder {
-        font-size: 1rem; /* Reduz o tamanho da fonte */
+        font-size: 1rem; /* Reduz o tamanh  o da fonte */
     }
 
     article h2 { /* Estilos para o h2 do article em telas muito pequenas */

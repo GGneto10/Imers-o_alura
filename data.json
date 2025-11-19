@@ -1,7 +1,37 @@
+[
 {
     "nome": "JavaScript",
     "descricao": "JavaScript é uma linguagem de programação leve, interpretada e orientada a objetos. É amplamente utilizada para desenvolvimento web, permitindo a criação de páginas interativas e dinâmicas.",
     "anoCriacao": 1995,
     "criador": "Brendan Eich",
     "link": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+},
+{
+    "nome": "Python",
+    "descricao": "Python é uma linguagem de programação de alto nível, interpretada e de propósito geral. É conhecida por sua sintaxe clara e legibilidade, sendo amplamente utilizada em diversas áreas, como desenvolvimento web, ciência de dados, automação e inteligência artificial.",
+    "anoCriacao": 1991,
+    "criador": "Guido van Rossum",
+    "link": "https://www.python.org/"
+},
+{
+    "nome": "Java",
+    "descricao": "Java é uma linguagem de programação de propósito geral, orientada a objetos e baseada em classes. É amplamente utilizada para desenvolvimento de aplicativos corporativos, aplicativos móveis (Android) e sistemas embarcados.",
+    "anoCriacao": 1995,
+    "criador": "James Gosling",
+    "link": "https://www.oracle.com/br/java/"
+},
+{
+    "nome": "C#",
+    "descricao": "C# é uma linguagem de programação moderna, orientada a objetos e desenvolvida pela Microsoft. É amplamente utilizada para desenvolvimento de aplicativos Windows, jogos (com Unity) e aplicativos web (com ASP.NET).",
+    "anoCriacao": 2000,
+    "criador": "Anders Hejlsberg",
+    "link": "https://docs.microsoft.com/pt-br/dotnet/csharp/"
+},
+{
+    "nome": "Ruby",
+    "descricao": "Ruby é uma linguagem de programação dinâmica, interpretada e orientada a objetos. É conhecida por sua sintaxe elegante e legibilidade, sendo amplamente utilizada no desenvolvimento web, especialmente com o framework Ruby on Rails.",
+    "anoCriacao": 1995,
+    "criador": "Yukihiro Matsumoto",
+    "link": "https://www.ruby-lang.org/pt/"
 }
+]

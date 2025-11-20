@@ -18,16 +18,27 @@ body {
     font-family: "Quicksand", sans-serif; /* Define a família da fonte */
 }
 
+.page-content {
+    display: none;
+}
+
+.page-content.active {
+    display: block;
+}
+
 header {
     padding: 2rem 1rem; /* Espaçamento interno (2rem em cima/baixo, 1rem nos lados) */
-    display: flex; /* Habilita o layout flexbox */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
-    justify-content: space-around; /* Distribui os itens com espaço ao redor */
     position: sticky; /* Mantém o cabeçalho fixo no topo ao rolar a página */
     top: 0; /* Posição do topo quando sticky */
     background: var(--bg-color); /* Cor de fundo do cabeçalho */
     z-index: 10; /* Define a ordem de empilhamento para ficar sobre outros elementos */
-    border-bottom: 1px solid var(--bg-color); /* Adiciona uma borda inferior */
+    border-bottom: 1px solid #3c4043; /* Adiciona uma borda inferior */
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     gap: 1rem; /* Espaçamento entre os elementos flex */
 }
 
@@ -38,7 +49,7 @@ header h1 {
     white-space: nowrap; /* Impede a quebra de linha do texto */
 }
 
-div input {
+.search-container input {
     padding: 0.375rem 0.75rem; /* Espaçamento interno */
     border-radius: 1rem; /* Arredonda as bordas */
     border: 1px solid var(--tertiary-color); /* Define a borda */
@@ -51,13 +62,13 @@ div input {
     margin-right: .5rem; /* Margem à direita */
 }
 
-div input::placeholder {
+.search-container input::placeholder {
     font-size: 1.2rem; /* Tamanho da fonte do placeholder */
     font-weight: 300; /* Peso da fonte do placeholder */
     color: var(--tertiary-color); /* Cor do texto do placeholder */
 }
 
-div input:focus {
+.search-container input:focus {
     outline: none; /* Remove a borda de foco padrão */
     border-color: var(--bg-color); /* Muda a cor da borda ao focar */
     box-shadow: 0 0 0 0.1rem var(--tertiary-color); /* Adiciona uma sombra de caixa para indicar foco */
@@ -88,12 +99,40 @@ div input:focus {
     transform: scale(0.98); /* Efeito de clique (diminui o tamanho) */
 }
 
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.nav-tab {
+    background: none;
+    border: none;
+    color: var(--tertiary-color);
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: color 0.2s ease, border-bottom 0.2s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-tab:hover {
+    color: var(--secondary-color);
+}
+
+.nav-tab.active {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
 main {
     overflow-y: scroll; /* Adiciona uma barra de rolagem vertical se o conteúdo exceder a altura */
     max-width: 80rem; /* Largura máxima do conteúdo principal */
     margin: 0 auto; /* Centraliza o conteúdo principal horizontalmente */
     margin-top: 2rem; /* Margem no topo */
-    height: calc(100vh - 10rem - 4rem); /* Calcula a altura para preencher o espaço restante da tela */
+    height: calc(100vh - 13rem - 4rem); /* Calcula a altura para preencher o espaço restante da tela */
 }
 
 article {
@@ -181,6 +220,42 @@ article a:hover {
     color: var(--accent-color); /* Muda a cor do link ao passar o mouse (variável não definida) */
 }
 
+/* Estilos para a página "Exemplos" */
+.exemplos-container {
+    padding: 0 1rem;
+}
+
+.exemplo-codigo {
+    background-color: #2d2d2d;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border: 1px solid #3c4043;
+}
+
+.exemplo-codigo h3 {
+    margin: 0;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #3c4043;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.exemplo-codigo pre {
+    padding: 1rem;
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    background-color: #1e1e1e;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#page-exemplos {
+    display: none;
+}
+
 @media (max-width: 768px) {
     header { /* Estilos para telas com largura máxima de 768px */
         flex-direction: column; /* Organiza os itens do cabeçalho em coluna */
@@ -192,7 +267,7 @@ article a:hover {
         margin-bottom: 1rem; /* Adiciona margem inferior */
     }
 
-    div input { /* Estilos para o input em telas menores */
+    .search-container input { /* Estilos para o input em telas menores */
         width: 90vw; /* Largura baseada na largura da viewport */
         font-size: 1.2rem; /* Reduz o tamanho da fonte */
     }
@@ -213,8 +288,8 @@ article a:hover {
         word-wrap: break-word; /* Permite a quebra de palavras longas */
     }
 
-    div input, /* Estilos para o input e seu placeholder em telas muito pequenas */
-    div input::placeholder {
+    .search-container input, /* Estilos para o input e seu placeholder em telas muito pequenas */
+    .search-container input::placeholder {
         font-size: 1rem; /* Reduz o tamanh  o da fonte */
     }
 
@@ -222,7 +297,7 @@ article a:hover {
         font-size: 1.3rem; /* Reduz o tamanho da fonte */
     }
 
-    div { /* Estilos para a div do cabeçalho em telas muito pequenas */
+    .search-container { /* Estilos para a div do cabeçalho em telas muito pequenas */
         display: flex; /* Habilita flexbox */
         align-items: center; /* Alinha itens ao centro */
         justify-content: center; /* Centraliza itens */

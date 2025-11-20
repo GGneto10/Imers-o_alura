@@ -4,55 +4,63 @@
     "descricao": "JavaScript é uma linguagem de programação leve, interpretada e orientada a objetos. É amplamente utilizada para desenvolvimento web, permitindo a criação de páginas interativas e dinâmicas.",
     "anoCriacao": 1995,
     "criador": "Brendan Eich",
-    "link": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+    "link": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
+    "helloWorld": "console.log(\"Hello, World!\");"
 },
 {
     "nome": "Python",
     "descricao": "Python é uma linguagem de programação de alto nível, interpretada e de propósito geral. É conhecida por sua sintaxe clara e legibilidade, sendo amplamente utilizada em diversas áreas, como desenvolvimento web, ciência de dados, automação e inteligência artificial.",
     "anoCriacao": 1991,
     "criador": "Guido van Rossum",
-    "link": "https://www.python.org/"
+    "link": "https://www.python.org/",
+    "helloWorld": "print(\"Hello, World!\")"
 },
 {
     "nome": "Java",
     "descricao": "Java é uma linguagem de programação de propósito geral, orientada a objetos e baseada em classes. É amplamente utilizada para desenvolvimento de aplicativos corporativos, aplicativos móveis (Android) e sistemas embarcados.",
     "anoCriacao": 1995,
     "criador": "James Gosling",
-    "link": "https://www.oracle.com/br/java/"
+    "link": "https://www.oracle.com/br/java/",
+    "helloWorld": "public class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
 },
 {
     "nome": "C#",
     "descricao": "C# é uma linguagem de programação moderna, orientada a objetos e desenvolvida pela Microsoft. É amplamente utilizada para desenvolvimento de aplicativos Windows, jogos (com Unity) e aplicativos web (com ASP.NET).",
     "anoCriacao": 2000,
     "criador": "Anders Hejlsberg",
-    "link": "https://docs.microsoft.com/pt-br/dotnet/csharp/"
+    "link": "https://docs.microsoft.com/pt-br/dotnet/csharp/",
+    "helloWorld": "using System;\n\nclass Program {\n    static void Main() {\n        Console.WriteLine(\"Hello, World!\");\n    }\n}"
 },
 {
     "nome": "Ruby",
     "descricao": "Ruby é uma linguagem de programação dinâmica, interpretada e orientada a objetos. É conhecida por sua sintaxe elegante e legibilidade, sendo amplamente utilizada no desenvolvimento web, especialmente com o framework Ruby on Rails.",
     "anoCriacao": 1995,
     "criador": "Yukihiro Matsumoto",
-    "link": "https://www.ruby-lang.org/pt/"
+    "link": "https://www.ruby-lang.org/pt/",
+    "helloWorld": "puts \"Hello, World!\""
 },
 {
     "nome": "C++",
     "descricao": "C++ é uma linguagem de programação de propósito geral, compilada e multiparadigma. É uma extensão da linguagem C, amplamente utilizada em software de sistema, jogos, drivers e aplicações de alto desempenho.",
     "anoCriacao": 1985,
     "criador": "Bjarne Stroustrup",
-    "link": "https://isocpp.org/"
+    "link": "https://isocpp.org/",
+    "helloWorld": "#include <iostream>\n\nint main() {\n    std::cout << \"Hello, World!\" << std::endl;\n    return 0;\n}"
 },
 {
     "nome": "PHP",
     "descricao": "PHP é uma linguagem de script de código aberto, especialmente adequada para o desenvolvimento web. É frequentemente usada para criar páginas dinâmicas e interagir com bancos de dados, sendo a base de sistemas como o WordPress.",
     "anoCriacao": 1995,
     "criador": "Rasmus Lerdorf",
-    "link": "https://www.php.net/"
+    "link": "https://www.php.net/",
+    "helloWorld": "<?php\n    echo \"Hello, World!\";\n?>"
 },
 {
     "nome": "TypeScript",
     "descricao": "TypeScript é um superconjunto de JavaScript desenvolvido pela Microsoft que adiciona tipagem estática opcional à linguagem. Ajuda a construir aplicações JavaScript em larga escala de forma mais segura e robusta.",
     "anoCriacao": 2012,
     "criador": "Microsoft",
-    "link": "https://www.typescriptlang.org/"
+    "link": "https://www.typescriptlang.org/",
+    "helloWorld": "console.log(\"Hello, World!\");"
 }
 ]

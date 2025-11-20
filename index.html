@@ -8,15 +8,27 @@
 </head>
 <body>
    <header>
-        <h1>Imersão Dev Alura - Google Gemini</h1>
-        <div>
-            <input type="text" placeholder="Digite uma Linguagem de programação válida">
-            <button id="botao-busca" onclick="iniciarBusca()">Buscar</button>
+        <div class="header-top">
+            <h1>Imersão Dev Alura - Google Gemini</h1>
+            <div class="search-container">
+                <input type="text" placeholder="Digite uma Linguagem de programação válida">
+                <button id="botao-busca" onclick="iniciarBusca()">Buscar</button>
+            </div>
         </div>
+        <nav class="main-nav">
+            <button id="tab-linguagens" class="nav-tab active">Linguagens</button>
+            <button id="tab-exemplos" class="nav-tab">Exemplos</button>
+        </nav>
    </header>
 
     <main>
-        <section class="card-container"></section>
+        <section id="page-linguagens" class="page-content active">
+            <div class="card-container"></div>
+        </section>
+
+        <section id="page-exemplos" class="page-content">
+            <div class="exemplos-container"></div>
+        </section>
     </main>
 
     <footer class="footer">

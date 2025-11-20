@@ -1,8 +1,24 @@
+let cardContainer = document.querySelector(".card-container");
+
 let dados = [];
 
 async function iniciarBusca() {
-    let resposta = awaitfetch("data.json"); 
+    let resposta = await fetch("data.json"); 
     dados = await resposta.json();
-    console.log(resposta);
+    renderizarCards(dados);
+}
 
+function renderizarCards(dados) {
+    cardContainer.innerHTML = ""; // Limpa o container antes de renderizar
+    for (let dado of dados) {
+        let article = document.createElement("article");
+        article.classList.add("card");
+        article.innerHTML = `
+        <h2>${dado.nome}</h2>
+        <p>${dado.anoCriacao}</p>
+        <p>${dado.descricao}</p>
+        <a href="${dado.link}" target="_blank">Saiba mais</a>
+        `
+        cardContainer.appendChild(article);
+    }
 }
